@@ -1,0 +1,19 @@
+#content {
+    min-height: calc(100vh - 80px);
+}
+
+.drop-zone {
+    border: 2px dashed #ccc;
+    background: #f2f2f2;
+    padding: 80px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drop-zone p {
+    margin: 0;
+}
+
+#file_input {
+    display: none;
+}

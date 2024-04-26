@@ -1,0 +1,17 @@
+{
+    "name": "futur-digital/test-backend-the-hau-le",
+    "description": "Backend test for PHP Backend Developer job application",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "The Hau LE",
+            "email": "lethehau@gmail.com"
+        }
+    ],
+    "require": {}
+}

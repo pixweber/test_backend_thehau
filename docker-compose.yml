@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: test_backend_thehaule
+      MYSQL_DATABASE: test_backend_thehaule
+      MYSQL_USER: test_backend_thehaule
+      MYSQL_PASSWORD: test_backend_thehaule
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./data/db.sql:/docker-entrypoint-initdb.d/db.sql
+
